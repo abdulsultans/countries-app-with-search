@@ -3,7 +3,7 @@ function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg bg-warning justify-content-between">
       <div>
-        <h5 className="text-white">COUNTRY <span>TREE</span></h5>
+        <h5 className="text-white">COUNTRY <span className="span bg-danger">FARM</span></h5>
       </div>
       <ul className="navbar-nav me-auto">
         <li className="nav-item">

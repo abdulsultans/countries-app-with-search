@@ -5,8 +5,9 @@ import { useState } from "react";
 function Countries() {
   const url = "https://restcountries.eu/rest/v2/all";
   const { countries, isPending, error } = useCountries(url);
+  
   const [search, setSearch] = useState("");
-  const [filteredCountries, setFilteredCountries] = useState([]);
+  // const [filteredCountries, setFilteredCountries] = useState([]);
 
   // useEffect(()=>{ setFilteredCountries(countries.filter(country =>{
   //   return country.name.toLowerCase().includes(search.toLowerCase())
