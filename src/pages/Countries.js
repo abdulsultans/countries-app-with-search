@@ -5,8 +5,8 @@ import { useState } from "react";
 function Countries() {
   const url = "https://restcountries.eu/rest/v2/all";
   const { countries, isPending, error } = useCountries(url);
-  
-  const [search, setSearch] = useState("");
+
+  const [setSearch] = useState("");
   // const [filteredCountries, setFilteredCountries] = useState([]);
 
   // useEffect(()=>{ setFilteredCountries(countries.filter(country =>{
@@ -45,7 +45,6 @@ function Countries() {
               capital={country.capital}
               region={country.region}
               subregion={country.subregion}
-
             />
           ))}
       </div>
