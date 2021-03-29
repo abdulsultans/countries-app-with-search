@@ -8,9 +8,9 @@ function Countries() {
   const [search, setSearch] = useState("");
   const [filteredCountries, setFilteredCountries] = useState([]);
 
-  useEffect(()=>{ setFilteredCountries(countries.filter(country =>{
-    return country.name.toLowerCase().includes(search.toLowerCase())
-  })
+  // useEffect(()=>{ setFilteredCountries(countries.filter(country =>{
+  //   return country.name.toLowerCase().includes(search.toLowerCase())
+  // })
 
   return (
     <section className="mt-2 bg-info">
